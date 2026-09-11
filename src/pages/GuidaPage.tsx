@@ -1,5 +1,4 @@
 import { guidaContent } from '../data/guida';
-import { Alert } from '../components/ui/Alert';
 import { Card } from '../components/ui/Card';
 import { PageBanner } from '../components/ui/PageBanner';
 
@@ -14,11 +13,6 @@ export function GuidaPage() {
       />
 
       <div className="container" style={{ marginTop: '2rem' }}>
-        <Alert>
-          Controlla sempre le informazioni aggiornate sul{' '}
-          <strong>bando più recente</strong> prima di candidarti.
-        </Alert>
-
         <p className="page-intro">{guidaContent.intro}</p>
 
         <div className="stack" style={{ marginBottom: '2rem' }}>

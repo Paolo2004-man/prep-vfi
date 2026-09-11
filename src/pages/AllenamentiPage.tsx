@@ -3,7 +3,6 @@ import { exercises } from '../data/exercises';
 import type { TrainingLevel } from '../types';
 import { ExerciseCard } from '../components/training/ExerciseCard';
 import { LevelTabs } from '../components/training/LevelTabs';
-import { Alert } from '../components/ui/Alert';
 import { PageBanner } from '../components/ui/PageBanner';
 
 export function AllenamentiPage() {
@@ -24,11 +23,6 @@ export function AllenamentiPage() {
       />
 
       <div className="container" style={{ marginTop: '2rem' }}>
-        <Alert>
-          I video sono contenuti pubblici di tecnica sportiva e non rappresentano
-          procedure ufficiali dell’Esercito. Adatta i carichi alla tua condizione.
-        </Alert>
-
         <LevelTabs value={level} onChange={setLevel} />
 
         <div className="exercise-grid">

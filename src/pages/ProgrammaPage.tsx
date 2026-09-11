@@ -32,11 +32,6 @@ export function ProgrammaPage() {
         description="Imposta livello, giorni disponibili e obiettivo: il piano viene salvato nel file data/program.json."
       />
 
-      <Alert>
-        Il programma è una proposta generica di allenamento. Non sostituisce
-        indicazioni mediche né i parametri del bando ufficiale.
-      </Alert>
-
       {error ? <Alert>Errore salvataggio JSON: {error}</Alert> : null}
 
       <div className="grid-2">

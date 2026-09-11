@@ -17,11 +17,6 @@ export function ProgressiPage() {
         description="Salva tempi, ripetizioni e sessioni completate nel file data/progress.json tramite API locale."
       />
 
-      <Alert>
-        I dati vengono scritti su disco in formato JSON (cartella <code>data/</code>).
-        Avvia il sito con <strong>npm run dev</strong> per abilitare il salvataggio.
-      </Alert>
-
       {error ? <Alert>Errore JSON: {error}</Alert> : null}
 
       <ProgressStats

@@ -1,5 +1,6 @@
 import { NavLink, Link } from 'react-router-dom';
 import { useState } from 'react';
+import { asset } from '../../utils/asset';
 
 const links = [
   { to: '/', label: 'Home', end: true },
@@ -18,7 +19,7 @@ export function Navbar() {
       <div className="navbar__inner">
         <Link to="/" className="navbar__brand" onClick={() => setOpen(false)}>
           <img
-            src="/images/crest-prep-vfi.png?v=2"
+            src={`${asset('images/crest-prep-vfi.png')}?v=2`}
             alt=""
             className="navbar__crest"
             aria-hidden

@@ -1,12 +1,13 @@
 import { consigliContent } from '../data/consigli';
 import { Card } from '../components/ui/Card';
 import { PageBanner } from '../components/ui/PageBanner';
+import { asset } from '../utils/asset';
 
 export function ConsigliPage() {
   return (
     <div>
       <PageBanner
-        image="/images/hero-training.png"
+        image={asset('images/hero-training.png')}
         eyebrow="Stile di vita"
         title="Consigli pratici"
         description="Allenamento, recupero, alimentazione equilibrata e motivazione."

@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "dayLabel": "Giorno 1",
+    "focus": "Corsa aerobica",
+    "exercises": [
+      {
+        "name": "Corsa continua",
+        "prescription": "35–40 min o ~5 km"
+      },
+      {
+        "name": "Core (plank + crunch)",
+        "prescription": "3 giri"
+      }
+    ],
+    "notes": "Mantieni un ritmo sostenibile per tutta la durata. Equilibrio tra corsa, forza e resistenza."
+  },
+  {
+    "dayLabel": "Giorno 2",
+    "focus": "Forza e potenza",
+    "exercises": [
+      {
+        "name": "Piegamenti",
+        "prescription": "4 × 15–20"
+      },
+      {
+        "name": "Squat + affondi",
+        "prescription": "3 × 12"
+      },
+      {
+        "name": "Burpee leggeri",
+        "prescription": "3 × 6–8"
+      }
+    ],
+    "notes": "Qualità del movimento sotto fatica. Equilibrio tra corsa, forza e resistenza."
+  },
+  {
+    "dayLabel": "Giorno 3",
+    "focus": "Intervalli corti",
+    "exercises": [
+      {
+        "name": "Riscaldamento",
+        "prescription": "10 min jogging"
+      },
+      {
+        "name": "Ripetute 200 m",
+        "prescription": "6–8 con recupero camminata"
+      },
+      {
+        "name": "Defaticamento",
+        "prescription": "8 min"
+      }
+    ],
+    "notes": "Non fare intervalli due giorni di seguito. Equilibrio tra corsa, forza e resistenza."
+  },
+  {
+    "dayLabel": "Giorno 4",
+    "focus": "Circuito selezione",
+    "exercises": [
+      {
+        "name": "Piegamenti",
+        "prescription": "40″ lavoro / 20″ pausa × 4"
+      },
+      {
+        "name": "Addominali",
+        "prescription": "40″ / 20″ × 4"
+      },
+      {
+        "name": "Squat",
+        "prescription": "40″ / 20″ × 4"
+      }
+    ],
+    "notes": "Simula pressione temporale senza sacrificare la tecnica. Equilibrio tra corsa, forza e resistenza."
+  }
+]

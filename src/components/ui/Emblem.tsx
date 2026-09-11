@@ -1,3 +1,5 @@
+import { asset } from '../../utils/asset';
+
 interface EmblemProps {
   name: 'crest' | 'chevrons' | 'star-badge';
   className?: string;
@@ -5,9 +7,9 @@ interface EmblemProps {
 }
 
 const srcMap = {
-  crest: '/emblems/crest.svg',
-  chevrons: '/emblems/chevrons.svg',
-  'star-badge': '/emblems/star-badge.svg',
+  crest: asset('emblems/crest.svg'),
+  chevrons: asset('emblems/chevrons.svg'),
+  'star-badge': asset('emblems/star-badge.svg'),
 } as const;
 
 export function Emblem({ name, className = '', alt = '' }: EmblemProps) {

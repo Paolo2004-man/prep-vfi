@@ -4,6 +4,7 @@ import type { TrainingLevel } from '../types';
 import { ExerciseCard } from '../components/training/ExerciseCard';
 import { LevelTabs } from '../components/training/LevelTabs';
 import { PageBanner } from '../components/ui/PageBanner';
+import { asset } from '../utils/asset';
 
 export function AllenamentiPage() {
   const [level, setLevel] = useState<TrainingLevel>('principiante');
@@ -16,7 +17,7 @@ export function AllenamentiPage() {
   return (
     <div>
       <PageBanner
-        image="/images/run-field.png"
+        image={asset('images/run-field.png')}
         eyebrow="Preparazione fisica"
         title="Allenamenti per livello"
         description="Corsa, forza, piegamenti, addominali e resistenza — con video dimostrativi."

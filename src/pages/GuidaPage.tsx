@@ -1,12 +1,13 @@
 import { guidaContent } from '../data/guida';
 import { Card } from '../components/ui/Card';
 import { PageBanner } from '../components/ui/PageBanner';
+import { asset } from '../utils/asset';
 
 export function GuidaPage() {
   return (
     <div>
       <PageBanner
-        image="/images/camo-gear.png"
+        image={asset('images/camo-gear.png')}
         eyebrow="Orientamento"
         title="Guida al VFI"
         description="Requisiti, selezione e consigli pratici per prepararti al percorso."

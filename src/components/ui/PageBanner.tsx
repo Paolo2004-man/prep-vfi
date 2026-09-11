@@ -1,3 +1,5 @@
+import { asset } from '../../utils/asset';
+
 interface PageBannerProps {
   image: string;
   eyebrow: string;
@@ -14,7 +16,7 @@ export function PageBanner({ image, eyebrow, title, description }: PageBannerPro
       <div className="page-banner__veil" />
       <div className="page-banner__content">
         <img
-          src="/images/crest-prep-vfi.png?v=2"
+          src={`${asset('images/crest-prep-vfi.png')}?v=2`}
           alt=""
           className="page-banner__crest"
           aria-hidden

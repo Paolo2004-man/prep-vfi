@@ -1,17 +1,18 @@
 import { Button } from '../components/ui/Button';
 import { SectionTitle } from '../components/ui/SectionTitle';
+import { asset } from '../utils/asset';
 
 const gallery = [
   {
-    src: '/images/run-field.png',
+    src: asset('images/run-field.png'),
     caption: 'Corsa e resistenza',
   },
   {
-    src: '/images/camo-gear.png',
+    src: asset('images/camo-gear.png'),
     caption: 'Attrezzatura e disciplina',
   },
   {
-    src: '/images/hero-training.png',
+    src: asset('images/hero-training.png'),
     caption: 'Campo e preparazione',
   },
 ];
@@ -22,14 +23,14 @@ export function HomePage() {
       <section className="hero hero--bleed">
         <div
           className="hero__media"
-          style={{ backgroundImage: "url('/images/hero-training.png')" }}
+          style={{ backgroundImage: `url('${asset('images/hero-training.png')}')` }}
           role="img"
           aria-label="Campo di allenamento all'aperto all'alba"
         />
         <div className="hero__veil" />
         <div className="hero__content container">
           <img
-            src="/images/crest-prep-vfi.png?v=2"
+            src={`${asset('images/crest-prep-vfi.png')}?v=2`}
             alt="Stemma Prep VFI"
             className="hero__crest"
           />

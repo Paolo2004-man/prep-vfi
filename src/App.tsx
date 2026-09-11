@@ -7,9 +7,11 @@ import { ProgrammaPage } from './pages/ProgrammaPage';
 import { ProgressiPage } from './pages/ProgressiPage';
 import { ConsigliPage } from './pages/ConsigliPage';
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename || undefined}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />

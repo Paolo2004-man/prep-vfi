@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <!-- Outer shield -->
+  <path
+    d="M100 8 L188 42 V118 C188 178 140 214 100 232 C60 214 12 178 12 118 V42 Z"
+    fill="#1a2210"
+    stroke="#c9b896"
+    stroke-width="6"
+  />
+  <!-- Inner shield -->
+  <path
+    d="M100 22 L172 50 V116 C172 166 134 196 100 212 C66 196 28 166 28 116 V50 Z"
+    fill="#3f5124"
+  />
+  <!-- Laurel left -->
+  <path
+    d="M58 150 C48 130 46 108 52 88 C60 104 66 120 70 138 C64 144 60 148 58 150 Z"
+    fill="#c9b896"
+    opacity="0.95"
+  />
+  <path d="M54 92 C62 98 68 108 70 118" stroke="#a8946e" stroke-width="2" fill="none"/>
+  <ellipse cx="50" cy="100" rx="7" ry="4" transform="rotate(-35 50 100)" fill="#d9ceb6"/>
+  <ellipse cx="48" cy="112" rx="7" ry="4" transform="rotate(-25 48 112)" fill="#d9ceb6"/>
+  <ellipse cx="50" cy="124" rx="7" ry="4" transform="rotate(-15 50 124)" fill="#d9ceb6"/>
+  <ellipse cx="54" cy="136" rx="7" ry="4" transform="rotate(-5 54 136)" fill="#d9ceb6"/>
+  <!-- Laurel right -->
+  <path
+    d="M142 150 C152 130 154 108 148 88 C140 104 134 120 130 138 C136 144 140 148 142 150 Z"
+    fill="#c9b896"
+    opacity="0.95"
+  />
+  <ellipse cx="150" cy="100" rx="7" ry="4" transform="rotate(35 150 100)" fill="#d9ceb6"/>
+  <ellipse cx="152" cy="112" rx="7" ry="4" transform="rotate(25 152 112)" fill="#d9ceb6"/>
+  <ellipse cx="150" cy="124" rx="7" ry="4" transform="rotate(15 150 124)" fill="#d9ceb6"/>
+  <ellipse cx="146" cy="136" rx="7" ry="4" transform="rotate(5 146 136)" fill="#d9ceb6"/>
+  <!-- Star -->
+  <path
+    d="M100 48 L108 72 H134 L114 88 L122 112 L100 96 L78 112 L86 88 L66 72 H92 Z"
+    fill="#e6d7b8"
+    stroke="#a8946e"
+    stroke-width="1.5"
+  />
+  <!-- Chevrons -->
+  <path d="M70 118 L100 102 L130 118 L122 126 L100 114 L78 126 Z" fill="#e6d7b8"/>
+  <path d="M78 136 L100 124 L122 136 L116 142 L100 132 L84 142 Z" fill="#d4c5a5"/>
+  <!-- Banner -->
+  <path d="M42 168 H158 L152 196 H48 Z" fill="#d9ceb6"/>
+  <path d="M42 168 L48 176 V196 L42 188 Z" fill="#b8a888"/>
+  <path d="M158 168 L152 176 V196 L158 188 Z" fill="#b8a888"/>
+  <text
+    x="100"
+    y="188"
+    text-anchor="middle"
+    fill="#15180f"
+    font-family="Arial Black, Arial Narrow, sans-serif"
+    font-size="18"
+    font-weight="800"
+    letter-spacing="2"
+  >PREP VFI</text>
+</svg>

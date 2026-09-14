@@ -1,74 +1,59 @@
 [
   {
     "dayLabel": "Giorno 1",
-    "focus": "Corsa aerobica",
+    "focus": "Corsa + core",
     "exercises": [
       {
-        "name": "Corsa continua",
-        "prescription": "35–40 min o ~5 km"
+        "name": "Corsa leggera",
+        "prescription": "20–25 min ritmo conversazionale"
       },
       {
-        "name": "Core (plank + crunch)",
-        "prescription": "3 giri"
+        "name": "Plank",
+        "prescription": "3 × 20–30″"
+      },
+      {
+        "name": "Crunch",
+        "prescription": "3 × 12–15"
       }
     ],
-    "notes": "Mantieni un ritmo sostenibile per tutta la durata. Equilibrio tra corsa, forza e resistenza."
+    "notes": "Priorità: abitudine e tecnica, non velocità. Enfasi su corsa e circuiti: priorità alla capacità aerobica."
   },
   {
     "dayLabel": "Giorno 2",
-    "focus": "Forza e potenza",
+    "focus": "Resistenza mista",
     "exercises": [
       {
-        "name": "Piegamenti",
-        "prescription": "4 × 15–20"
+        "name": "Camminata veloce + jogging",
+        "prescription": "25 min"
       },
       {
-        "name": "Squat + affondi",
-        "prescription": "3 × 12"
+        "name": "Jumping jack",
+        "prescription": "3 × 30″"
       },
       {
-        "name": "Burpee leggeri",
-        "prescription": "3 × 6–8"
+        "name": "Stretching totale",
+        "prescription": "8–10 min"
       }
     ],
-    "notes": "Qualità del movimento sotto fatica. Equilibrio tra corsa, forza e resistenza."
+    "notes": "Giorno più leggero: ascolta il corpo. Enfasi su corsa e circuiti: priorità alla capacità aerobica."
   },
   {
     "dayLabel": "Giorno 3",
-    "focus": "Intervalli corti",
+    "focus": "Forza superiore + gambe",
     "exercises": [
       {
-        "name": "Riscaldamento",
-        "prescription": "10 min jogging"
+        "name": "Piegamenti (anche sulle ginocchia)",
+        "prescription": "3 × 8–10"
       },
       {
-        "name": "Ripetute 200 m",
-        "prescription": "6–8 con recupero camminata"
+        "name": "Squat a corpo libero",
+        "prescription": "3 × 10–12"
       },
       {
-        "name": "Defaticamento",
-        "prescription": "8 min"
+        "name": "Affondi assistiti / statici",
+        "prescription": "2 × 8 per gamba"
       }
     ],
-    "notes": "Non fare intervalli due giorni di seguito. Equilibrio tra corsa, forza e resistenza."
-  },
-  {
-    "dayLabel": "Giorno 4",
-    "focus": "Circuito selezione",
-    "exercises": [
-      {
-        "name": "Piegamenti",
-        "prescription": "40″ lavoro / 20″ pausa × 4"
-      },
-      {
-        "name": "Addominali",
-        "prescription": "40″ / 20″ × 4"
-      },
-      {
-        "name": "Squat",
-        "prescription": "40″ / 20″ × 4"
-      }
-    ],
-    "notes": "Simula pressione temporale senza sacrificare la tecnica. Equilibrio tra corsa, forza e resistenza."
+    "notes": "Recupera 60–90″ tra le serie. Enfasi su corsa e circuiti: priorità alla capacità aerobica."
   }
 ]

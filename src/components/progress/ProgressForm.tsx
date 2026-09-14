@@ -137,7 +137,7 @@ export function ProgressForm({ onSubmit }: ProgressFormProps) {
           </label>
         </div>
         <div className="field field--full">
-          <Button type="submit">Salva su JSON</Button>
+          <Button type="submit">Salva</Button>
         </div>
       </form>
     </Card>

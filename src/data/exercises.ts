@@ -116,17 +116,6 @@ export const exercises: Exercise[] = [
 
   // ——— Avanzato ———
   {
-    id: 'a-corsa-1',
-    name: 'Corsa intervallata (HIIT)',
-    category: 'corsa',
-    level: 'avanzato',
-    description:
-      'Intervalli ad alta intensità per migliorare VO2 e ritmo da prova.',
-    sets: '8×400 m veloci con recupero di camminata/jog',
-    tips: 'Riscaldamento obbligatorio. Non fare HIIT tutti i giorni.',
-    youtubeId: 'aQ9ygaXjoB0',
-  },
-  {
     id: 'a-forza-1',
     name: 'Burpee + squat jump',
     category: 'forza',
@@ -135,16 +124,6 @@ export const exercises: Exercise[] = [
     sets: '5 serie × 8–10 ripetizioni',
     tips: 'Atterraggio morbido, core attivo, pausa se la tecnica cala.',
     youtubeId: 'auBLPXO8Fww',
-  },
-  {
-    id: 'a-pieg-1',
-    name: 'Piegamenti avanzati / diamante',
-    category: 'piegamenti',
-    level: 'avanzato',
-    description: 'Varianti più impegnanti per petto, tricipiti e core.',
-    sets: '5 serie × 15–25 ripetizioni (miste)',
-    tips: 'Alterna standard, diamante e piegamenti lenti eccentrica.',
-    youtubeId: 'Jf5_PjcDWEg',
   },
   {
     id: 'a-add-1',

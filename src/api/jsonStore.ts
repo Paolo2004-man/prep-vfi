@@ -6,9 +6,10 @@ function storageKey(resource: Resource) {
   return `${STORAGE_PREFIX}${resource}`;
 }
 
-function looksLikeHtml(body: string) {
-  const start = body.trimStart().slice(0, 15).toLowerCase();
-  return start.startsWith('<!doctype') || start.startsWith('<html');
+function isLocalDevHost() {
+  if (typeof window === 'undefined') return false;
+  const host = window.location.hostname;
+  return host === 'localhost' || host === '127.0.0.1';
 }
 
 function readLocal<T>(resource: Resource): T {
@@ -31,37 +32,37 @@ async function requestJson<T>(url: string, init?: RequestInit): Promise<T> {
     ...init,
   });
 
+  const contentType = response.headers.get('content-type') ?? '';
   const body = await response.text();
 
-  if (!response.ok || looksLikeHtml(body)) {
-    throw new Error(
-      looksLikeHtml(body)
-        ? `Errore HTTP ${response.status}`
-        : body || `Errore HTTP ${response.status}`,
-    );
+  if (!response.ok || !contentType.includes('application/json')) {
+    throw new Error('Salvataggio file JSON disponibile solo in locale con npm run dev.');
   }
 
   return JSON.parse(body) as T;
 }
 
-/** Su GitHub Pages non c'è l'API Vite: si usa localStorage. In `npm run dev` si usano i file JSON. */
-function useLocalStorage() {
-  return import.meta.env.PROD;
-}
-
 export async function fetchJson<T>(resource: Resource): Promise<T> {
-  if (useLocalStorage()) {
-    return readLocal<T>(resource);
+  if (isLocalDevHost()) {
+    try {
+      return await requestJson<T>(`/api/${resource}`);
+    } catch {
+      return readLocal<T>(resource);
+    }
   }
-  return requestJson<T>(`/api/${resource}`);
+  return readLocal<T>(resource);
 }
 
 export async function saveJson<T>(resource: Resource, data: T): Promise<T> {
-  if (useLocalStorage()) {
-    return writeLocal(resource, data);
+  if (isLocalDevHost()) {
+    try {
+      return await requestJson<T>(`/api/${resource}`, {
+        method: 'PUT',
+        body: JSON.stringify(data),
+      });
+    } catch {
+      return writeLocal(resource, data);
+    }
   }
-  return requestJson<T>(`/api/${resource}`, {
-    method: 'PUT',
-    body: JSON.stringify(data),
-  });
+  return writeLocal(resource, data);
 }

@@ -20,7 +20,9 @@ export function useJsonFile<T>(resource: Resource, initialValue: T) {
         }
       } catch (err) {
         if (!cancelled) {
-          setError(err instanceof Error ? err.message : 'Impossibile leggere il JSON');
+          const message =
+            err instanceof Error ? err.message : 'Impossibile leggere i dati';
+          setError(/<!doctype|<html/i.test(message) ? null : message);
         }
       } finally {
         if (!cancelled) setLoading(false);
@@ -42,7 +44,9 @@ export function useJsonFile<T>(resource: Resource, initialValue: T) {
             await saveJson(resource, next);
             setError(null);
           } catch (err) {
-            setError(err instanceof Error ? err.message : 'Impossibile salvare il JSON');
+            const message =
+              err instanceof Error ? err.message : 'Impossibile salvare i dati';
+            setError(/<!doctype|<html/i.test(message) ? null : message);
           }
         })();
 

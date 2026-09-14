@@ -363,6 +363,9 @@ textarea {
   color: var(--color-beige);
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
+  overflow-wrap: anywhere;
+  max-height: 8rem;
+  overflow: auto;
 }
 
 .grid-2 {

@@ -14,7 +14,7 @@ export function ProgressiPage() {
       <SectionTitle
         eyebrow="Monitoraggio"
         title="I tuoi progressi"
-        description="Salva tempi, ripetizioni e sessioni completate nel file data/progress.json tramite API locale."
+        description="Salva tempi, ripetizioni e sessioni completate. I dati restano su questo dispositivo."
       />
 
       {error ? <Alert>Errore JSON: {error}</Alert> : null}

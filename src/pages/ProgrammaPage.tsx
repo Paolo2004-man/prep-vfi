@@ -29,7 +29,7 @@ export function ProgrammaPage() {
       <SectionTitle
         eyebrow="Su misura"
         title="Programma personalizzato"
-        description="Imposta livello, giorni disponibili e obiettivo: il piano viene salvato nel file data/program.json."
+        description="Imposta livello, giorni disponibili e obiettivo: il piano resta salvato su questo dispositivo."
       />
 
       {error ? <Alert>Errore salvataggio JSON: {error}</Alert> : null}
